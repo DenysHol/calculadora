@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Calculadora</h1>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="display" class="form-control" disabled>
+      </div>
+      <div class="buttons">
+        <button onclick="clearDisplay()" class="btn btn-danger">C</button>
+        <button onclick="appendToDisplay('7')" class="btn btn-secondary">7</button>
+        <button onclick="appendToDisplay('8')" class="btn btn-secondary">8</button>
+        <button onclick="appendToDisplay('9')" class="btn btn-secondary">9</button>
+        <button onclick="appendToDisplay('+')" class="btn btn-primary">+</button>
+        <button onclick="appendToDisplay('4')" class="btn btn-secondary">4</button>
+        <button onclick="appendToDisplay('5')" class="btn btn-secondary">5</button>
+        <button onclick="appendToDisplay('6')" class="btn btn-secondary">6</button>
+        <button onclick="appendToDisplay('-')" class="btn btn-primary">-</button>
+        <button onclick="appendToDisplay('1')" class="btn btn-secondary">1</button>
+        <button onclick="appendToDisplay('2')" class="btn btn-secondary">2</button>
+        <button onclick="appendToDisplay('3')" class="btn btn-secondary">3</button>
+        <button onclick="appendToDisplay('*')" class="btn btn-primary">*</button>
+        <button onclick="appendToDisplay('0')" class="btn btn-secondary">0</button>
+        <button onclick="appendToDisplay('.')" class="btn btn-secondary">.</button>
+        <button onclick="calculate()" class="btn btn-success">=</button>
+        <button onclick="appendToDisplay('/')" class="btn btn-primary">/</button>
+        <button onclick="calculatePercentage()" class="btn btn-info">%</button>
+        <button onclick="calculateSquare()" class="btn btn-info">x^2</button>
+        <button onclick="calculateSquareRoot()" class="btn btn-info">√x</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
